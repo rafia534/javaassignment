@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31</title>
+</head>
+<body>
+     <script Language="JavaScript">
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+                                              //        Task#1
+//**********************************************************************************************************************************************//
+//   var today = new Date();
+//   var day = today.getDay();
+//   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+//   document.write("Today is : " + daylist[day] + ".");
+//   var hour = today.getHours();
+//   var minute = today.getMinutes();
+//   var second = today.getSeconds();
+//   var prepand = (hour >= 12)? " PM ":" AM ";
+//   hour = (hour >= 12)? hour - 12: hour;
+//   if (hour===0 && prepand===' PM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Noon';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' PM';
+//   } 
+//   } 
+//   if (hour===0 && prepand===' AM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Midnight';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' AM';
+//   } 
+//   } 
+// document.write("<br>Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+                                                                //Task#2 (Go to HTML to run complete)
+//***********************************************************************************************************************************************
+
+
+// function myFunction() {
+//   var month = new Array();
+//   month[0] = "January";
+//   month[1] = "February";
+//   month[2] = "March";
+//   month[3] = "April";
+//   month[4] = "May";
+//   month[5] = "June";
+//   month[6] = "July";
+//   month[7] = "August";
+//   month[8] = "September";
+//   month[9] = "October";
+//   month[10] = "November";
+//   month[11] = "December";
+
+//   var d = new Date();
+//   var n = month[d.getMonth()];
+//   document.getElementById("demo").innerHTML = n;
+// }
+var d = new (Date();
+document.getElementById("demo").innerHTML = d;
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                     //Task#3  (Go to HTML to run complete)
+//**************************************************************************************************************************************************
+// function myFunc() {
+//   var d = new Date();
+//   var weekday = new Array(7);
+//   weekday[0] = "Sun";
+//   weekday[1] = "Mon";
+//   weekday[2] = "Tue";
+//   weekday[3] = "Wed";
+//   weekday[4] = "Thu";
+//   weekday[5] = "Fri";
+//   weekday[6] = "Sat";
+
+//   var n = weekday[d.getDay()];
+//   document.getElementById("demo").innerHTML = n;
+// }
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                //Task#4(Show its AM or PM)
+//************************************************************************************************************************************************
+                                                              
+                                                          
+
+// var currentTime = new Date(),
+//       hours = currentTime.getHours(),
+//       minutes = currentTime.getMinutes();
+
+	
+
+// 	var suffix = "AM";
+// 	if (hours >= 12) {
+//     suffix = "PM";
+//     hours = hours - 12;
+// 	}
+
+
+// 	document.write( "It's " +suffix)
+
+// **************************************************************************************************************************************************    
+// _________________________________________________________________Q13(DOB)________________________________________________________________________________ -->
+
+// function ageCount() {
+//         var date1 = new Date();
+//         var  dob= document.getElementById("dob").value;
+//         var date2=new Date(dob);
+//         var pattern = /^\d{1,2}\/\d{1,2}\/\d{4}$/; //Regex to validate date format (dd/mm/yyyy)
+//         if (pattern.test(dob)) {
+//             var y1 = date1.getFullYear(); //getting current year
+//             var y2 = date2.getFullYear(); //getting dob year
+//             var age = y1 - y2;           //calculating age 
+//             document.write("Age : " + age);
+//             return true;
+//         } else {
+//             alert("Invalid date format. Please Input in (dd/mm/yyyy) format!");
+//             return false;
+//         }
+
+//     }
+
+// **************************************************************************************************************************************************    
+//_________________________________________________________________Q12(100 years back)___(Go to HTML to run complete)_____________________________________________________________________________ -->
+
+// function hundYear() {
+//   var d = new Date();
+//   d.setFullYear(d.getFullYear() - 100);
+//   document.getElementById("demo").innerHTML = d;
+// }
+// var d = new Date();
+// document.write(d)
+
+    </script>
+
+
+<!-- **************************************************************************************************************************************************    
+_________________________________________________________________Q13(DOB)________________________________________________________________________________ -->
+
+
+<!-- // Date of Birth(dd/mm/yyyy):
+// <input type="text" name="dob" id="dob" />
+// <input type="submit" value="Age" onclick="ageCount();"> -->
+
+<!-- **************************************************************************************************************************************************    
+_________________________________________________________________Q (3 words days) ________________________________________________________________________________ -->
+
+ <!-- <button onclick="myFunc()">Try it</button>
+
+<p id="demo"></p>  -->
+
+<!-- **************************************************************************************************************************************************    
+_________________________________________________________________Q ( Months)________________________________________________________________________________ -->
+
+    <!-- <button onclick="myFunction()">Click here to get the current month</button>
+    <p id="demo"></p> -->
+
+
+<!-- **************************************************************************************************************************************************    
+_________________________________________________________________Q12(100 years back)_______________________________________________________________________________ -->
+
+    <!-- <button onclick="hundYear()">Try it</button>
+
+<p id="demo"></p> -->
+
+
+   
+</body>
+</html>
